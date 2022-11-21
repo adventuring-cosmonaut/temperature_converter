@@ -1,0 +1,56 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter | JS to Python</title>
+    <link rel="stylesheet" href="style/temp_converter.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Celcius : Farhenheit - Converter</h1>
+    </header>
+    <main>
+      <div id="main_content_container">
+        <div id="selection_page" class="selection_page selection_active">
+          <h2>How would you like to convert?</h2>
+          <section id="choice_btn_container">
+            <div class="temp_choice_btn" id="choice_btn_celcius">
+              Celcius <br /><br />
+              &#129107; <br /><br />
+              Farhrenheit
+            </div>
+            <div class="temp_choice_btn" id="choice_btn_fahrenheit">
+              Farhenheit <br /><br />
+              &#129107; <br /><br />
+              Celcius
+            </div>
+          </section>
+        </div>
+        <div id="convertion_page" class="convertion_page">
+          <h2 id="temp_input_header"></h2>
+          <div class="convertion_page_content">
+            <section>
+              <input
+                type="text"
+                name="Temperature Input"
+                id="temp_input"
+                placeholder="100..."
+                cols="60"
+                rows="1"
+                required />
+              <input type="submit" name="convert" value="CONVERT" class="convert_btn" id="convert_btn" />
+            </section>
+            <p class="arrow_down_convert_page">&#129107;</p>
+            <div id="result_container"></div>
+            <div id="return_to_selection" class="return_to_selection">&#129044; Return to selection page</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script/temp_converter.js"></script>
+  </body>
+</html>
