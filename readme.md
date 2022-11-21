@@ -1,7 +1,3 @@
-<!-- @format -->
-
-bn<!-- @format -->
-
 # Celcius : Fahrenheit - Converter
 
 > ## Not sure what you were hoping to find here, it's just temperature.
