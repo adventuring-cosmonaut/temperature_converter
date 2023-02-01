@@ -32,19 +32,19 @@ choiceBtnFahrenheit.addEventListener('click', fahrenheitListener); /* Can you sh
 returnToSelection.addEventListener('click', returnToSelectionFunc);
 
 /* Celcius to Fahrenheit calculation */
-function celcius_calculation_full(degrees_celcius) {
+const celcius_calculation_full = (degrees_celcius) => {
   let celciusCalc = degrees_celcius * 1.8 + 32;
   return parseFloat(celciusCalc.toFixed(1)) + '&#8457;';
 }
 
 /* Fahrenheit to Celcius calculation */
-function fahrenheit_calculation_full(degrees_fahrenheit) {
+const fahrenheit_calculation_full = (degrees_fahrenheit) => {
   let fahrenheitCalc = (degrees_fahrenheit - 32) / 1.8;
   return parseFloat(fahrenheitCalc.toFixed(1)) + '&#8451;';
 }
 
 /* Execution of conversions - celcius to fahrenheit */
-function celcius_execution() {
+const celcius_execution = () => {
   let degree_amount_element = document.querySelector('#temp_input').value;
   try {
     resultContainer.removeChild(resultContainer.lastElementChild);
@@ -75,7 +75,7 @@ function celcius_execution() {
 }
 
 /* Execution of conversions - fahrenheit to celcius */
-function fahrenheit_execution() {
+const fahrenheit_execution = () => {
   let degree_amount_element = document.querySelector('#temp_input').value;
   try {
     resultContainer.removeChild(resultContainer.lastElementChild);
